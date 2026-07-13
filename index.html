@@ -537,6 +537,8 @@
             background-color: rgba(0, 0, 0, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.2);
             z-index: 1001;
+            outline: none;
+            font-family: inherit;
         }
 
         .modal-next {
@@ -709,8 +711,8 @@
     <div id="imageModal" class="modal">
         <span class="modal-close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImage" alt="Vista ampliada de la instalación de Parque Topater">
-        <a class="modal-prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="modal-next" onclick="changeSlide(1)">&#10095;</a>
+        <button class="modal-prev" onclick="changeSlide(-1)" aria-label="Imagen anterior">&#10094;</button>
+        <button class="modal-next" onclick="changeSlide(1)" aria-label="Siguiente imagen">&#10095;</button>
     </div>
 
     <!-- Lightbox Script -->
